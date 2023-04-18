@@ -147,18 +147,18 @@
         
         // Q6 
         
-        if ($num1 < 0) {
-            echo "Nagative Value not Alow";
-        } else {
-            if ($num1 <= 100) {
-                echo "No charge";
+        // if ($num1 < 0) {
+        //     echo "Nagative Value not Alow";
+        // } else {
+        //     if ($num1 <= 100) {
+        //         echo "No charge";
         
-            } else if ($num1 > 100 && $num1 <= 200) {
-                echo  $num1 *5;
-            } else {
-                echo  $num1 *10;
-            }
-        }
+        //     } else if ($num1 > 100 && $num1 <= 200) {
+        //         echo  $num1 *5;
+        //     } else {
+        //         echo  $num1 *10;
+        //     }
+        // }
         // ===============================================
         
         // Q7 
