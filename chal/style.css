@@ -1,0 +1,100 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aliceblue;
+}
+h1 {
+  text-align: center;
+  margin: 15px;
+}
+form {
+  border: 2px solid black;
+  min-height: 400px;
+  width: 50%;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 15px;
+  background: linear-gradient(45deg, rgb(14, 14, 216), rgb(60, 60, 214));
+  color: white;
+}
+form div {
+  margin: 15px 5px;
+}
+form div label {
+  font-size: 17px;
+  margin: 5px 25px;
+}
+form input {
+  width: 80%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 25px;
+  display: block;
+  margin: 15px auto;
+}
+
+@media (max-width: 499px) {
+  form {
+    border: 2px solid black;
+    min-height: 400px;
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: black;
+  }
+  form input {
+    width: 90%;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border-radius: 25px;
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 999px) {
+  form {
+    border: 2px solid black;
+    min-height: 400px;
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: black;
+  }
+  form input {
+    width: 90%;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border-radius: 25px;
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+button {
+  display: block;
+  padding: 10px;
+  margin: 15px auto;
+  font-size: 17px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.deg {
+  /* height: 400px; */
+  width: 400px;
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  margin: 15px auto;
+  border-radius: 25px;
+  padding: 35px;
+  text-transform: capitalize;
+}
