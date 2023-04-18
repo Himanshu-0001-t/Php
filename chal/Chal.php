@@ -12,7 +12,7 @@
 <body>
     <h1>Welcome</h1>
 
-    <form action="" method="post">
+    <!-- <form action="" method="post">
 
         <div>
             <label for="Fnum">First Num</label>
@@ -21,6 +21,32 @@
         <div>
             <label for="Snum">Sec Num</label>
             <input type="text" name="Num2" id="Snum">
+        </div>
+        <div>
+            <label for="Tnum">Third Num</label>
+            <input type="text" name="Num3" id="Tnum">
+        </div>
+        <div>
+            <label for="Fnum">Fourth Num</label>
+            <input type="text" name="Num4" id="Fnum">
+        </div>
+        <div>
+            <label for="Fifth"> Fifth Num</label>
+            <input type="text" name="Num5" id="Fifth">
+        </div>
+
+        <button type="submit">Login</button>
+    </form> -->
+
+    <form action="" method="post">
+
+        <div>
+            <label for="Fnum">Customer Name</label>
+            <input type="text" name="Num1" id="Fnum">
+        </div>
+        <div>
+            <label for="Snum">Check-in-date</label>
+            <input type="date" name="Num2" id="Snum">
         </div>
         <div>
             <label for="Tnum">Third Num</label>
@@ -48,6 +74,8 @@
         $num4 = $_POST['Num4'];
         $num5 = $_POST['Num5'];
 
+
+        echo $num2;
 
         // Q1
         // if ($num1 <= 18) {
@@ -222,37 +250,42 @@
         // ===============================================================
         // Q 13
         
-        $sum = ($num1 + $num2 + $num3 + $num4 + $num5);
+        // $sum = ($num1 + $num2 + $num3 + $num4 + $num5);
 
-        $avg = "";
-        if ($sum < 500) {
-            $avg = ($sum / 500 * 100);
-            echo "Average is $avg";
-        } else {
-            echo "Enter valid number";
-        }
+        // $avg = "";
+        // if ($sum < 500) {
+        //     $avg = ($sum / 500 * 100);
+        //     echo "Average is $avg";
+        // } else {
+        //     echo "Enter valid number";
+        // }
 
-        echo "<br>";
+        // echo "<br>";
 
-        if ($avg > 0 && $avg <= 100) {
+        // if ($avg > 0 && $avg <= 100) {
 
-            if ($avg < 50) {
-                echo "You are fail";
-            } elseif ($avg >= 50 && $avg < 65) {
-                echo "Your Grade is C";
-            } else if ($avg >= 65 && $avg < 80) {
-                echo "Your Grade is B";
-            } elseif ($avg >= 80 && $avg < 90) {
-                echo "Your Grade is A";
-            } else {
-                echo "Your Grade is S";
-            }
-            ;
+        //     if ($avg < 50) {
+        //         echo "You are fail";
+        //     } elseif ($avg >= 50 && $avg < 65) {
+        //         echo "Your Grade is C";
+        //     } else if ($avg >= 65 && $avg < 80) {
+        //         echo "Your Grade is B";
+        //     } elseif ($avg >= 80 && $avg < 90) {
+        //         echo "Your Grade is A";
+        //     } else {
+        //         echo "Your Grade is S";
+        //     }
+        //     ;
 
-        } else {
-            echo "Enter Valid Avarage";
-        }
+        // } else {
+        //     echo "Enter Valid Avarage";
+        // }
 
+        // =========================================================
+
+        // Q 14
+
+        
 
         ?>
 
