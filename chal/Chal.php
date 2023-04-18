@@ -12,7 +12,7 @@
 <body>
     <h1>Welcome</h1>
 
-    <!-- <form action="" method="post">
+    <form action="" method="post">
 
         <div>
             <label for="Fnum">First Num</label>
@@ -36,46 +36,57 @@
         </div>
 
         <button type="submit">Login</button>
-    </form> -->
-
-    <form action="" method="post">
+    </form>
+   
+    <!-- ======================================================================= -->
+    <!-- <form action="" method="post">
 
         <div>
             <label for="Fnum">Customer Name</label>
             <input type="text" name="Num1" id="Fnum">
-        </div>
-        <div>
+        </div> -->
+        <!-- <div>
             <label for="Snum">Check-in-date</label>
             <input type="date" name="Num2" id="Snum">
         </div>
         <div>
-            <label for="Tnum">Third Num</label>
-            <input type="text" name="Num3" id="Tnum">
-        </div>
-        <div>
-            <label for="Fnum">Fourth Num</label>
+            <label for="Tnum">Check-out-dat</label>
+            <input type="date" name="Num3" id="Tnum">
+        </div> -->
+        <!-- <div>
+            <label for="Fnum">Total Days</label>
             <input type="text" name="Num4" id="Fnum">
         </div>
         <div>
-            <label for="Fifth"> Fifth Num</label>
-            <input type="text" name="Num5" id="Fifth">
+            <label for="RoomType">Room Type</label>
+            <select name="RoomType" id="roomtype">
+                <option value="Ac">Ac</option>
+                <option value="Gen">Gen</option>
+            </select>
         </div>
 
         <button type="submit">Login</button>
-    </form>
+    </form> -->
+
+    <!-- ===================================================================================== -->
 
     <div class="deg">
 
         <?php
-
+    //   =========================================
+    //    Q 14
+        // $num1 = $_POST['Num1'];
+        // $num4 = $_POST['Num4'];
+        // $num5 = $_POST['RoomType'];
+//  =================================================
+        
         $num1 = $_POST['Num1'];
         $num2 = $_POST['Num2'];
         $num3 = $_POST['Num3'];
         $num4 = $_POST['Num4'];
         $num5 = $_POST['Num5'];
 
-
-        echo $num2;
+        
 
         // Q1
         // if ($num1 <= 18) {
@@ -136,18 +147,18 @@
         
         // Q6 
         
-        // if ($num1 < 0) {
-        //     echo "Nagative Value not Alow";
-        // } else {
-        //     if ($num1 <= 100) {
-        //         echo "No charge";
+        if ($num1 < 0) {
+            echo "Nagative Value not Alow";
+        } else {
+            if ($num1 <= 100) {
+                echo "No charge";
         
-        //     } else if ($num1 > 100 && $num1 <= 200) {
-        //         echo " 5 Rs Per Unit ";
-        //     } else {
-        //         echo " 10 Rs Per Unit";
-        //     }
-        // }
+            } else if ($num1 > 100 && $num1 <= 200) {
+                echo  $num1 *5;
+            } else {
+                echo  $num1 *10;
+            }
+        }
         // ===============================================
         
         // Q7 
@@ -251,7 +262,7 @@
         // Q 13
         
         // $sum = ($num1 + $num2 + $num3 + $num4 + $num5);
-
+        
         // $avg = "";
         // if ($sum < 500) {
         //     $avg = ($sum / 500 * 100);
@@ -259,11 +270,11 @@
         // } else {
         //     echo "Enter valid number";
         // }
-
+        
         // echo "<br>";
-
+        
         // if ($avg > 0 && $avg <= 100) {
-
+        
         //     if ($avg < 50) {
         //         echo "You are fail";
         //     } elseif ($avg >= 50 && $avg < 65) {
@@ -276,15 +287,25 @@
         //         echo "Your Grade is S";
         //     }
         //     ;
-
+        
         // } else {
         //     echo "Enter Valid Avarage";
         // }
-
+        
         // =========================================================
-
+        
         // Q 14
 
+        // if($num5 =="Ac"){
+        //      echo "Hello $num1 ";
+        //      echo "Your Charge is " . 500 * $num4;
+        // }else{
+        //     echo "Hello $num1";
+        //     echo "Your Charge is " . 200 * $num4;
+
+        // }
+
+        // =============================================================
         
 
         ?>
