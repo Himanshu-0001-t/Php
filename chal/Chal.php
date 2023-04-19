@@ -12,7 +12,7 @@
 <body>
     <h1>Welcome</h1>
 
-    <form action="" method="post">
+    <!-- <form action="" method="post">
 
         <div>
             <label for="Fnum">First Num</label>
@@ -37,23 +37,23 @@
 
         <button type="submit">Login</button>
     </form>
-   
+    -->
     <!-- ======================================================================= -->
-    <!-- <form action="" method="post">
+    <form action="" method="post">
 
         <div>
             <label for="Fnum">Customer Name</label>
             <input type="text" name="Num1" id="Fnum">
-        </div> -->
-        <!-- <div>
-            <label for="Snum">Check-in-date</label>
-            <input type="date" name="Num2" id="Snum">
         </div>
         <div>
+            <label for="Snum">Age</label>
+            <input type="number" name="Num2" id="Snum">
+        </div>
+        <!-- <div>
             <label for="Tnum">Check-out-dat</label>
             <input type="date" name="Num3" id="Tnum">
         </div> -->
-        <!-- <div>
+        <div>
             <label for="Fnum">Total Days</label>
             <input type="text" name="Num4" id="Fnum">
         </div>
@@ -66,27 +66,28 @@
         </div>
 
         <button type="submit">Login</button>
-    </form> -->
+    </form>
 
     <!-- ===================================================================================== -->
 
     <div class="deg">
 
         <?php
-    //   =========================================
-    //    Q 14
-        // $num1 = $_POST['Num1'];
-        // $num4 = $_POST['Num4'];
-        // $num5 = $_POST['RoomType'];
-//  =================================================
-        
+        //   =========================================
+        //    Q 14 , Q 22 , Q 23
         $num1 = $_POST['Num1'];
         $num2 = $_POST['Num2'];
-        $num3 = $_POST['Num3'];
         $num4 = $_POST['Num4'];
-        $num5 = $_POST['Num5'];
-
+        $num5 = $_POST['RoomType'];
+        //  =================================================
         
+        // $num1 = $_POST['Num1'];
+        // $num2 = $_POST['Num2'];
+        // $num3 = $_POST['Num3'];
+        // $num4 = $_POST['Num4'];
+        // $num5 = $_POST['Num5'];
+        
+
 
         // Q1
         // if ($num1 <= 18) {
@@ -295,18 +296,96 @@
         // =========================================================
         
         // Q 14
-
+        
         // if($num5 =="Ac"){
         //      echo "Hello $num1 ";
         //      echo "Your Charge is " . 500 * $num4;
         // }else{
         //     echo "Hello $num1";
         //     echo "Your Charge is " . 200 * $num4;
-
+        
         // }
-
+        
         // =============================================================
         
+        // Q 22
+        
+        // if ($num5 == "Ac") {
+        //     if ($num4 >= 10 && $num4 <= 20) {
+        //         $bil = $num4 * 500 - 500;
+        //         echo $bil;
+        //     } elseif ($num4 > 20) {
+        //         $bil = $num4 * 500 - 1000;
+        //         echo $bil;
+        //     } else {
+        //         echo "No Discount";
+        //     }
+        // } else {
+        //     if ($num4 >= 10 && $num4 <= 20) {
+        //         $bil = $num4 * 200 - 200;
+        //         echo $bil;
+        //     } elseif ($num4 > 20) {
+        //         $bil = $num4 * 200 - 400;
+        //         echo $bil;
+        //     } else {
+        //         echo "No Discount";
+        //     }
+        
+        // }
+        
+        // ======================================================================
+        
+        // Q 23 
+        
+        if ($num5 == "Ac") {
+
+            if ($num2 <= 60) {
+
+                if ($num4 < 10) {
+                    echo "No Discount";
+
+                } else {
+                    $bil = $num4 * 500 - 500;
+                    echo $bil;
+                }
+
+            } else {
+
+                if ($num4 < 10) {
+                    $bil = $num4 * 500 - 500;
+                    echo $bil;
+
+                } else {
+                    $bil = $num4 * 500 - 1000;
+                    echo $bil;
+                }
+            }
+
+        } else {
+
+           if ($num2 <= 60) {
+
+                if ($num4 < 10) {
+                    echo "No Discount";
+
+                } else {
+                    $bil = $num4 * 200 - 200;
+                    echo $bil;
+                }
+                
+            } else {
+
+                if ($num4 < 10) {
+                    $bil = $num4 * 200 - 200;
+                    echo $bil;
+
+                } else {
+                    $bil = $num4 * 200 - 400;
+                    echo $bil;
+                }
+            }
+        }
+
 
         ?>
 
