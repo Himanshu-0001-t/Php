@@ -1,0 +1,39 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form {
+  border: 2px solid black;
+  min-height: 350px;
+  width: 400px;
+  margin: 15px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+}
+form p {
+  width: 90%;
+  margin: 15px auto;
+  font-size: 17px;
+}
+p input {
+  width: 90%;
+  padding: 10px;
+  outline: 0;
+  font-size: 17px;
+}
+p input::placeholder {
+  font-size: 15px;
+}
+button {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgb(6, 30, 51);
+  color: gold;
+  font-size: 17px;
+  cursor: pointer;
+}
