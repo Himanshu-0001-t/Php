@@ -31,17 +31,17 @@
 // }
 // ;
 
-$server = 'localhost';
-$user = "root";
-$password = "";
-$db = "panda";
+// $server = 'localhost';
+// $user = "root";
+// $password = "";
+// $db = "panda";
 
-$conn = mysqli_connect($server, $user, $password, $db);
+// $conn = mysqli_connect($server, $user, $password, $db);
 
-if (!$conn) {
-    die("Not Connect");
-}
-;
+// if (!$conn) {
+//     die("Not Connect");
+// }
+// ;
 
 // $sql = "CREATE DATABASE Panda";
 
@@ -57,18 +57,18 @@ if (!$conn) {
 // 
 
 
-$sql = "SELECT * FROM `student`";
+// $sql = "SELECT * FROM `student`";
 
-$result = mysqli_query($conn, $sql);
+// $result = mysqli_query($conn, $sql);
 
-if (mysqli_num_rows($result) > 0) {
-    while ($row = mysqli_fetch_assoc($result)) {
-        echo "Hello " . $row['Name'];
-        echo "<br>";
-    }
-} else {
-    echo "No Result found";
-}
+// if (mysqli_num_rows($result) > 0) {
+//     while ($row = mysqli_fetch_assoc($result)) {
+//         echo "Hello " . $row['Name'];
+//         echo "<br>";
+//     }
+// } else {
+//     echo "No Result found";
+// }
 
 
 
